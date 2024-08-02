@@ -6,12 +6,10 @@
 #   Luis G. Rosales
 #################################
 
-def hi():
-    print("Hello")
-
 def operation_selector(num1, num2, op):
     ##########################
-    # Función:  
+    # Función: Retorna el resultado de la operación indicada 
+    #   (+, -, *, &) entre dos numeros enteros.
     # Entradas: num1, num2, op
     # Salidas:  resultado
     ##########################
@@ -31,11 +29,6 @@ def operation_selector(num1, num2, op):
         nums_are_int = 0
     elif (not isinstance(num2, int)):
         nums_are_int = 0
-    
-    #if (not isinstance(num1, int)):
-    #    nums_are_int = 0
-    #if (not isinstance(num2, int)):
-    #    nums_are_int = 0
     
     if (not nums_are_int):
         # Si el argumento num1 o num2 no es entero, imprime el 1er mensaje de error
