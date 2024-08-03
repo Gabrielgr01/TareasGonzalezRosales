@@ -3,7 +3,7 @@
 #
 # Desarrolladores: 
 #   Gabriel O. Gonzalez Rodríguez
-#   Luis G. Rosales
+#   Luis G. Rosales Morera
 #################################
 
 def operation_selector(num1, num2, op):
