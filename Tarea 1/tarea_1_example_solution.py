@@ -62,30 +62,6 @@ def operation_selector(num1, num2, op):
             res_cod = -70
 
     return res_cod, res_val
-    
-def calculo_promedio(lista_valores):
-    ##########################
-    # Función: Retorna el promedio de los valores de una lista
-    # Entrada: lista_valores
-    # Salidas:  res_cod, res_val
-    ##########################
-
-    res_cod = 0
-    res_val = None
-    
-    # Validación de errores
-    if (len(lista_valores) > 10): #Primera validación: el largo de la lista no supera los 10 elementos
-        res_cod = -90
-        return res_cod, res_val
-    else:
-        for i in lista_valores:
-            if (isinstance(i, bool) or isinstance(i, str)): #Segunda validación: los elementos en la lista no son booleanos o strings
-                res_cod = -80
-                return res_cod, res_val
-    res_val = sum(lista_valores)/len(lista_valores)
-    
-    return res_cod, res_val
-
 
 
 def calculo_promedio(lista_valores):
